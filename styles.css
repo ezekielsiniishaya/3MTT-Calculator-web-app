@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.calculator {
+    background: #333;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    padding: 20px;
+}
+
+.display {
+    background: #222;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    word-wrap: break-word;
+    min-height: 80px;
+}
+
+.previous-operand {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    height: 20px;
+}
+
+.current-operand {
+    color: white;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+button {
+    background: #666;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: 15px;
+    cursor: pointer;
+    margin: 5px;
+    width: 50px;
+    transition: all 0.2s;
+}
+
+button:hover {
+    background: #777;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button[data-operation] {
+    background: #ff9500;
+}
+
+button[data-operation]:hover {
+    background: #ffaa33;
+}
+
+button[data-action="clear"] {
+    background: #ff3b30;
+}
+
+button[data-action="clear"]:hover {
+    background: #ff5e54;
+}
+
+button[data-action="delete"] {
+    background: #a5a5a5;
+}
+
+button[data-action="delete"]:hover {
+    background: #b5b5b5;
+}
+
+.span-two {
+    width: 110px !important;
+}
