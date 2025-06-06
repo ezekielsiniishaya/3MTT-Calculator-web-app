@@ -1,8 +1,10 @@
+/* Apply box-sizing and set default font for all elements */
 * {
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
 
+/* Center the calculator on the page with a light background */
 body {
     background: #f4f4f4;
     display: flex;
@@ -13,6 +15,7 @@ body {
     padding: 20px;
 }
 
+/* Calculator container styling */
 .calculator {
     background: #333;
     border-radius: 15px;
@@ -21,6 +24,7 @@ body {
     padding: 20px;
 }
 
+/* Display area styling */
 .display {
     background: #222;
     color: white;
@@ -32,18 +36,21 @@ body {
     min-height: 80px;
 }
 
+/* Previous operand styling */
 .previous-operand {
     color: rgba(255, 255, 255, 0.7);
     font-size: 1rem;
     height: 20px;
 }
 
+/* Current operand styling */
 .current-operand {
     color: white;
     font-size: 2rem;
     margin-top: 10px;
 }
 
+/* General button styling */
 button {
     background: #666;
     color: white;
@@ -57,38 +64,47 @@ button {
     transition: all 0.2s;
 }
 
+/* Button hover effect */
 button:hover {
     background: #777;
 }
 
+/* Button active (pressed) effect */
 button:active {
     transform: scale(0.95);
 }
 
+/* Operation buttons (e.g., +, -, *, /) */
 button[data-operation] {
     background: #ff9500;
 }
 
+/* Operation buttons hover effect */
 button[data-operation]:hover {
     background: #ffaa33;
 }
 
+/* Clear button styling */
 button[data-action="clear"] {
     background: #ff3b30;
 }
 
+/* Clear button hover effect */
 button[data-action="clear"]:hover {
     background: #ff5e54;
 }
 
+/* Delete button styling */
 button[data-action="delete"] {
     background: #a5a5a5;
 }
 
+/* Delete button hover effect */
 button[data-action="delete"]:hover {
     background: #b5b5b5;
 }
 
+/* Span-two class for buttons that span two columns */
 .span-two {
     width: 110px !important;
 }
