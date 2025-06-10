@@ -1,47 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator App</title>
     <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
     <!-- Calculator container -->
     <div class="calculator">
-        <!-- Display section for showing operands and results -->
-        <div class="display"></div>
-            <div class="previous-operand"></div> <!-- Shows previous operand and operation -->
-            <div class="current-operand">0</div> <!-- Shows current operand -->
-        </div>
-        
-        <!-- Calculator buttons -->
-        <button class="span-two" data-action="clear">AC</button> <!-- All Clear button -->
-        <button data-action="delete">DEL</button> <!-- Delete last digit button -->
-        <button data-operation>÷</button> <!-- Division operation button -->
-        
-        <button data-number>7</button> <!-- Number button -->
-        <button data-number>8</button>
-        <button data-number>9</button>
-        <button data-operation>*</button> <!-- Multiplication operation button -->
-        
-        <button data-number>4</button>
-        <button data-number>5</button>
-        <button data-number>6</button>
-        <button data-operation>-</button> <!-- Subtraction operation button -->
-        
-        <button data-number>1</button>
-        <button data-number>2</button>
-        <button data-number>3</button>
-        <button data-operation>+</button> <!-- Addition operation button -->
-        
-        <button data-number>0</button>
-        <button data-number>.</button> <!-- Decimal point button -->
-        <button class="span-two" data-action="calculate">=</button> <!-- Equals button -->
+      <!-- Display section for showing operands and results -->
+      <div class="display">
+        <div class="previous-operand"></div>
+        <!-- Shows previous operand and operation -->
+        <div class="current-operand">0</div>
+      </div>
+      <!-- Shows current operand -->
+
+      <!-- Calculator buttons -->
+      <button class="span-two" data-action="clear">AC</button>
+      <!-- All Clear button -->
+      <button data-action="delete">DEL</button>
+      <!-- Delete last digit button -->
+      <button data-operation>÷</button>
+      <!-- Division operation button -->
+
+      <button data-number>7</button>
+      <!-- Number button -->
+      <button data-number>8</button>
+      <button data-number>9</button>
+      <button data-operation>*</button>
+      <!-- Multiplication operation button -->
+
+      <button data-number>4</button>
+      <button data-number>5</button>
+      <button data-number>6</button>
+      <button data-operation>-</button>
+      <!-- Subtraction operation button -->
+
+      <button data-number>1</button>
+      <button data-number>2</button>
+      <button data-number>3</button>
+      <button data-operation>+</button>
+      <!-- Addition operation button -->
+
+      <button data-number>0</button>
+      <button data-number>.</button>
+      <!-- Decimal point button -->
+      <button class="span-two" data-action="calculate">=</button>
+      <!-- Equals button -->
     </div>
-    
+
     <!-- Link to external JavaScript file -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

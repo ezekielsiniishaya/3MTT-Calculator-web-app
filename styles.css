@@ -97,6 +97,7 @@ button[data-action="clear"]:hover {
 /* Delete button styling */
 button[data-action="delete"] {
     background: #a5a5a5;
+    padding-left:10px;
 }
 
 /* Delete button hover effect */
@@ -106,5 +107,5 @@ button[data-action="delete"]:hover {
 
 /* Span-two class for buttons that span two columns */
 .span-two {
-    width: 110px !important;
+    width: 115px !important;
 }
